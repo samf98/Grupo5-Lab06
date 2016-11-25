@@ -5,7 +5,7 @@
 
 using namespace std;
 
-clase Partido
+class Partido
 {
 	private:
 		Equipo equipo1;

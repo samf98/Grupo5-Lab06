@@ -6,6 +6,8 @@
 #include "Equipo.h"
 #include "Partido.h"
 
+int random();
+
 int main()
 {
 	vector<Equipo*> equipos = NULL;
@@ -83,11 +85,29 @@ int main()
 
 			case 2:
 			{
+				int elecciones;
 				if(equipos.size()<4)
 					cout<<"No hay suficientes equipos."<<endl;
 				else
 				{
-					
+					cout<<"Equipos para el torneo, (1-Random, 2-Elegidos por el usuario) ";
+					cin>>elecciones;
+					if(elecciones==1||elecciones==2)
+					{
+						if(elecciones==1)
+						{
+
+						}
+						else
+						{
+
+						}
+					}
+					else
+					{
+						cout<<"Número invalido, se escoge random por default."<<endl;
+						
+					}
 				}
 				break;
 			}
@@ -96,4 +116,11 @@ int main()
 		cin>>operacion;
 	}while(operacion==0);
 
+}
+
+
+int random()
+{
+	int numero = 0;
+	return numero;
 }
