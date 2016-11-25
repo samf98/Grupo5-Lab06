@@ -1,6 +1,8 @@
 #include "Persona.h"
 #include <sstream>
 
+using std::stringstream;
+
 Entrenador::Entrenador(string pTactica){
 
 }

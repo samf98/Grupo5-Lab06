@@ -1,6 +1,8 @@
 #include "Partido.h"
 #include <sstream>
 
+using std::stringstream;
+
 Partido::Partido(){
 	pPuntos_e1 = pPuntos_e2 = 0;
 }

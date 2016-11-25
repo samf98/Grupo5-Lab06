@@ -1,6 +1,8 @@
 #include "Equipo.h"
 #include <sstream>
 
+using std::stringstream;
+
 Equipo::Equipo(string pNombre){
 	pDefensa = pOfensa = pGolespro = pGolescon = 0;
 }
@@ -27,6 +29,7 @@ Equipo::~Equipo(){
 
 void Equipo::toString(){
 	stringstream ss;
-	ss << "Nombre de Equipo: " << pNombre << endl << "Nivel de defensa: " << pDefensa << endl << "Nivel de Ofensa: " << pOfensa << endl << "Goles a favor: " << pGolespro << endl << "Goles en contra: " << pGolescon << endl;
+	ss << "Nombre de Equipo: " << pNombre << endl << "Nivel de defensa: " << pDefensa << endl << "Nivel de Ofensa: " << pOfensa << endl << "Goles a favor: " << pGolespro << endl << "Goles en contra: " << pGolescon << endl
+	<< Jugador::toString() << endl << Entrenador::toString() << endl;
 	cout << ss;
 }
