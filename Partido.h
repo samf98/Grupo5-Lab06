@@ -3,6 +3,8 @@
 #include "Equipo.h"
 #include <iostream>
 
+using namespace std;
+
 clase Partido
 {
 	private:

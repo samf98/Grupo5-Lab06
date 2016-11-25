@@ -12,4 +12,4 @@ class Entrenador: Persona
 		void setTactica(string);
 		string getTactica();
 		void toString();
-}
+};

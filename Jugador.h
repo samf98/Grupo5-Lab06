@@ -12,4 +12,4 @@ class Jugador: Persona
 		void setPosicion(string);
 		string getPosicion();
 		void toString();
-}
+};

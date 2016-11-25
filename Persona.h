@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Persona
 {
 	private:
@@ -22,4 +24,4 @@ class Persona
 		int getNivel();
 		void setNivel(int);
 		void toString();
-}
+};
