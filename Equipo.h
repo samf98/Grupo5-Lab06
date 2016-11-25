@@ -26,6 +26,8 @@ class Equipo
 		Jugador* getJugadores();
 		void setJugadores(Jugador*);
 		void calcularDefensa();
+		void setNombre(string);
+		string getNombre();
 		void calcularOfensa();
 		int getGolespro();
 		void setGolespro(int);

@@ -1,9 +1,11 @@
-#include "Persona.h"
+#include "Entrenador.h"
 #include <sstream>
 
 using std::stringstream;
 
-Entrenador::Entrenador(string pTactica){
+Entrenador::Entrenador(string pNombre, string pApellido, string pSobrenombre, int pNivel, string pTactica):Persona(string pNombre, string pApellido, string pSobrenombre, int pNivel){
+
+	tactica = pTactica;
 
 }
 

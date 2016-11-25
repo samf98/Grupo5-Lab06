@@ -3,7 +3,16 @@
 
 using std::stringstream;
 
-Persona::Persona(string pNombre, string pApellido, string pSobrenombre, int nivel){
+Persona::Persona(string pNombre, string pApellido, string pSobrenombre, int pNivel){
+	nombre = pNombre;
+	apellido = pApellido;
+	sobrenombre = pSobrenombre;
+	nivel = pNivel;
+}
+
+Persona::~Persona()
+{
+	
 }
 
 void Persona::setNombre(string pNombre){
