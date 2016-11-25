@@ -41,14 +41,9 @@ string Persona::getSobrenombre(){
 
 int Persona::getNivel(){ return nivel;}
 
-
-Persona::~Persona(){
-
-}
-
 string Persona::toString(){
 	stringstream ss;
-	ss << "Nombre: " << pNombre << endl << "Apellido: " << pApellido << endl << "Sobrenombre: " << pSobrenombre << endl << "Nivel: " << nivel << endl;
+	ss << "Nombre: " << nombre << endl << "Apellido: " << apellido << endl << "Sobrenombre: " << sobrenombre << endl << "Nivel: " << nivel << endl;
 	cout << ss;
 	return ss.str();
 }
