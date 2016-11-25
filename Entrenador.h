@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Persona.h"
 
 class Entrenador: Persona
