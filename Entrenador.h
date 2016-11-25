@@ -9,4 +9,5 @@ class Entrenador: Persona
 		~Entrenador();
 		void setTactica(string);
 		string getTactica();
+		void toString();
 }
