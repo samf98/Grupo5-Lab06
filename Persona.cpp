@@ -1,6 +1,8 @@
 #include "Persona.h"
 #include <sstream>
 
+using std::stringstream;
+
 Persona::Persona(string pNombre, string pApellido, string pSobrenombre, int nivel){
 }
 

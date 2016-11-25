@@ -1,7 +1,9 @@
 #include "Persona.h"
 #include <sstream>
 
-Jugador::Jugador(string){
+using std::stringstream;
+
+Jugador::Jugador(string pPosicion){
 }
 
 void Jugador::setPosicion(string pPosicion){

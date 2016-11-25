@@ -33,4 +33,4 @@ class Equipo
 		void setGolescon();
 		void toString();
 
-}
+};
