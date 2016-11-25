@@ -26,4 +26,4 @@ class Partido
 		void setGanador();
 		void toString();
 
-}
+};
