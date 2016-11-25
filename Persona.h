@@ -21,4 +21,5 @@ class Persona
 		string getSobrenombre();
 		int getNivel();
 		void setNivel(int);
+		void toString();
 }
