@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Jugador.h"
+#include "Entrenador.h"
 #include <iostream>
 #include <string>
 

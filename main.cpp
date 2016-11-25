@@ -22,18 +22,101 @@ int main()
 			case 1:
 			{
 				if(jugadores.size()>=10&&entrenadores.size()>=1)
+				{
+					Jugador* jugadores_equipo = new Jugador[11];
+
+					int cont=0;
+					int jugador_escogido=0;
+					for (int i = 0; i < 11; ++i)
+					{
+						cout<<"Escoja el jugador "<<endl;
+						cin>>jugador_escogido;
+						if(jugador_escogido>-1&&jugador_escogido<jugadores.size())
+						{
+							jugadores_equipo[cont] = jugadores.at(jugador_escogido);
+							jugadores.erase(jugador_escogido);
+						}
+						else
+							i--;
+					}
+
+					int validacion = 0;
+					Entrenador* entrenador_equipo;
+					int entrenador_escogido=0;
+					while(validacion = 0)
+					{
+						cout<<"Escoja un entrenador: ";
+						cin>>entrenador_escogido;
+						if(entrenador_escogido>=0&&entrenador_escogido<entrenadores.size())
+						{
+							entrenador_equipo = entrenadores.at(entrenador_escogido);
+							entrenadores.erase(entrenador_escogido);
+							validacion = 1;
+						}
+						else
+							cout<<"No escogió un entrenador.";
+					}
+				}
+				else
+					cout<<"No hay suficientes jugadores y/o entrenadores."<<endl;
 				break;
 			}
 
 			case 2:
 			{
+				Jugador* jugador = NULL;
+				string nombre = "";
+				string apellido = "";
+				string sobrenombre = "";
+				int nivel = 0;
+				string posicion = "";
+				cout<<"Ingrese nombre: ";
+				cin>>nombre;
+				cout<<"Ingrese apellido: ";
+				cin>>apellido;
+				cout<<"Ingrese sobrenombre: ";
+				cin>>sobrenombre;
+				cout<<"Ingrese nivel(1-10): ";
+				cin>>nivel;
+				cout<<"Ingrese la posición: ";
+				cin>>posicion;
 
+				if(nivel<11&&nivel>0)
+				{
+					jugador = new Jugador(nombre.apellido,sobrenombre,nivel,posicion);
+					jugadores.push_back(jugador);
+				}
+				else
+					cout<<"Nivel no válido."<<endl;
 				break;
 			}
 
 			case 3:
 			{
+				Entrenador* entrenador = NULL;
+				string nombre = "";
+				string apellido = "";
+				string sobrenombre = "";
+				int nivel = 0;
+				string tactica = "";
+				cout<<"Ingrese nombre: ";
+				cin>>nombre;
+				cout<<"Ingrese apellido: ";
+				cin>>apellido;
+				cout<<"Ingrese sobrenombre: ";
+				cin>>sobrenombre;
+				cout<<"Ingrese nivel(1-10): ";
+				cin>>nivel;
+				cout<<"Ingrese la táctica: ";
+				cin>>tactica;
 
+				if(nivel<11&&nivel>0)
+				{
+					entrenador = new Entrenador(nombre.apellido,sobrenombre,nivel,entrenador);
+					entrenadores.push_back(entrenador);
+				}
+				else
+					cout<<"Nivel no válido."<<endl;
 				break;
 			}
 

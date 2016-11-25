@@ -1,4 +1,6 @@
 #pragma once
+
+#include "Equipo.h"
 #include <iostream>
 
 clase Partido
@@ -12,7 +14,7 @@ clase Partido
 		Equipo local;
 
 	public:
-		Equipo();
+		Equipo(Equipo,Equipo);
 		~Equipo();
 		void setEquipo1(Equipo);
 		void setEquipo2(Equipo);
