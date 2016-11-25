@@ -2,7 +2,7 @@
 
 #include "Persona.h"
 
-class Jugador: Persona
+class Jugador: public Persona
 {
 	private:
 		string posicion;
@@ -11,5 +11,5 @@ class Jugador: Persona
 		~Jugador();
 		void setPosicion(string);
 		string getPosicion();
-		void toString();
+		string toString();
 };

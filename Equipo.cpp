@@ -34,4 +34,3 @@ void Equipo::toString(){
 	cout << ss;
 }
 
-void calcularDefensa()

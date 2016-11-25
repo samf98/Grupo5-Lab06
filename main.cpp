@@ -6,11 +6,13 @@
 #include "Equipo.h"
 #include "Partido.h"
 
+using namespace std;
+
 int random();
 
 int main()
 {
-	vector<Equipo*> equipos = NULL;
+	vector<Equipo*> equipos;
 
 	int operacion=0;
 	do

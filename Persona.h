@@ -13,8 +13,9 @@ class Persona
 		string sobrenombre;
 		int nivel;
 	public:
+		Persona();
 		Persona(string,string,string,int);
-		~Persona();
+		virtual ~Persona();
 		void setNombre(string);
 		string getNombre();
 		void setApellido(string);
@@ -23,5 +24,5 @@ class Persona
 		string getSobrenombre();
 		int getNivel();
 		void setNivel(int);
-		void toString();
+		virtual string toString();
 };

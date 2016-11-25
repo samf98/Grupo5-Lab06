@@ -18,7 +18,7 @@ Jugador::~Jugador(){
 
 }
 
-void Jugador::toString(){
+string Jugador::toString(){
 	stringstream ss;
 	ss << Persona::toString() << "Posicion del jugador: " << pPosicion << endl;
 	cout << ss;

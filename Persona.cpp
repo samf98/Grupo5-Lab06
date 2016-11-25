@@ -46,10 +46,11 @@ Persona::~Persona(){
 
 }
 
-void Persona::toString(){
+string Persona::toString(){
 	stringstream ss;
 	ss << "Nombre: " << pNombre << endl << "Apellido: " << pApellido << endl << "Sobrenombre: " << pSobrenombre << endl << "Nivel: " << nivel << endl;
 	cout << ss;
+	return ss.str();
 }
 
 
