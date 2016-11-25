@@ -83,7 +83,12 @@ int main()
 
 			case 2:
 			{
-
+				if(equipos.size()<4)
+					cout<<"No hay suficientes equipos."<<endl;
+				else
+				{
+					
+				}
 				break;
 			}
 		}
