@@ -14,7 +14,10 @@ clase Partido
 	public:
 		Equipo();
 		~Equipo();
-		
+		void setEquipo1(Equipo);
+		void setEquipo2(Equipo);
+		int getPuntos1();
+		int getPuntos2();
 		void setLocal();
 		void setGanador();
 		void toString();

@@ -7,7 +7,7 @@ class Equipo
 {
 	private:
 		string nombre;
-		Entrenador entrenador;
+		Entrenador* entrenador;
 		Jugador* jugadores;
 		double defensa;
 		double ofensa;
@@ -15,8 +15,10 @@ class Equipo
 		int golescon;
 
 	public:
-		Equipo(string,string);
+		Equipo(string);
 		~Equipo();
+		void setEntrenador();
+		Entrenador* getEntrenador();
 		Jugador* getJugadores();
 		void setJugadores(Jugador*);
 		void calcularDefensa();
