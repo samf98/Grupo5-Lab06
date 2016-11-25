@@ -16,8 +16,8 @@ class Partido
 		Equipo local;
 
 	public:
-		Equipo(Equipo,Equipo);
-		~Equipo();
+		Partido(Equipo,Equipo);
+		~Partido();
 		void setEquipo1(Equipo);
 		void setEquipo2(Equipo);
 		int getPuntos1();
