@@ -1,4 +1,5 @@
 #include "Persona.h"
+#include <sstream>
 
 Entrenador::Entrenador(string pTactica){
 
