@@ -1,6 +1,6 @@
 #include "Persona.h"
 
-Entrenador::Entrenador(){
+Entrenador::Entrenador(string pTactica){
 
 }
 
@@ -13,5 +13,10 @@ string Entrenador::getTactica(){
 }
 
 Entrenador::~Entrenador(){
-	
+}
+
+void Entrenador::toString(){
+	stringstream ss;
+	ss << Persona::toString() << "Tactica preferida: " << preferida << endl;
+	cout << ss;
 }

@@ -1,6 +1,7 @@
 #include "Persona.h"
+#include <sstream>
 
-Jugador::Jugador(){
+Jugador::Jugador(string){
 }
 
 void Jugador::setPosicion(string pPosicion){
@@ -12,5 +13,11 @@ string Jugador::getPosicion(){
 }
 
 Jugador::~Jugador(){
-
 }
+
+void Jugador::toString(){
+	stringstream ss;
+	ss << Persona::toString() << "Posicion del jugador: " << pPosicion << endl;
+	cout << ss;
+}
+
