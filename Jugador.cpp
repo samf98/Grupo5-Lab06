@@ -15,6 +15,7 @@ string Jugador::getPosicion(){
 }
 
 Jugador::~Jugador(){
+
 }
 
 void Jugador::toString(){
@@ -22,4 +23,6 @@ void Jugador::toString(){
 	ss << Persona::toString() << "Posicion del jugador: " << pPosicion << endl;
 	cout << ss;
 }
+
+
 

@@ -34,6 +34,7 @@ int Persona::getNivel(){ return nivel;}
 
 
 Persona::~Persona(){
+
 }
 
 void Persona::toString(){

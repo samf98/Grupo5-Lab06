@@ -33,3 +33,5 @@ void Equipo::toString(){
 	<< Jugador::toString() << endl << Entrenador::toString() << endl;
 	cout << ss;
 }
+
+void calcularDefensa()
