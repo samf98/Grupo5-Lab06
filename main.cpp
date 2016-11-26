@@ -5,6 +5,7 @@
 #include "Jugador.h"
 #include "Equipo.h"
 #include "Partido.h"
+#include <time.h>
 
 using namespace std;
 
@@ -121,8 +122,20 @@ int main()
 }
 
 
-int random()
-{
-	int numero = 0;
+int random(){
+
+	int numero, numero2;
+
+	srand (time(NULL));
+
+	numero2 = equipos.size();
+	//cout << numero2;
+
+	numero = rand() % numero2 + 1;
+
 	return numero;
-}
+	
+	}
+
+
+		
