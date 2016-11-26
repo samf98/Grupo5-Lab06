@@ -123,8 +123,7 @@ int main()
 
 }
 
-
-int random(){
+/*int random(){
 
 	int numero, numero2;
 
@@ -138,6 +137,6 @@ int random(){
 	return numero;
 	
 	}
-
+*/
 
 		

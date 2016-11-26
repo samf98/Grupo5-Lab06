@@ -33,6 +33,25 @@ int Equipo::getGolespro(){return golespro;}
 
 int Equipo::getGolescon(){return golescon;}
 
+//void Equipo::calcularDefensa()
+//{
+	//for (int i = 0; i < 11; ++i)
+	//{
+		//defensa+=jugadores[i]->getNivel();
+	//}
+	//defensa+= entrenador->getNivel();
+//}
+
+/*void Equipo::calcularOfensa()
+{
+	for (int i = 0; i < 11; ++i)
+	{
+		ofensa+=jugadores[i]->getNivel();
+	}
+	ofensa+= entrenador->getNivel();
+	ofensa = ofensa*1.1;
+}*/
+
 Equipo::~Equipo(){
 
 }
@@ -51,5 +70,9 @@ void Equipo::toString(){
 	cout << "Nombre de Equipo: " << nombre << endl << "Nivel de defensa: " << defensa << endl << "Nivel de Ofensa: " << ofensa << endl << "Goles a favor: " << golespro << endl << "Goles en contra: " << golescon << endl;
 	imprimirJugadores();
 	entrenador->toString();
+}
+
+double calcularDefensa(){
+
 }
 
