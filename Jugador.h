@@ -2,14 +2,15 @@
 
 #include "Persona.h"
 
-class Jugador: public Persona
+class Jugador: Persona
 {
 	private:
 		string posicion;
 	public:
+		Jugador();
 		Jugador(string,string,string,int,string);
 		~Jugador();
 		void setPosicion(string);
 		string getPosicion();
-		string toString();
+		void toString();
 };

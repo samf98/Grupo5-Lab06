@@ -20,18 +20,24 @@ class Equipo
 		int golescon;
 
 	public:
+		Equipo();
 		Equipo(string);
 		~Equipo();
-		void setEntrenador();
+		void setEntrenador(Entrenador*);
 		Entrenador* getEntrenador();
 		Jugador* getJugadores();
 		void setJugadores(Jugador*);
 		void calcularDefensa();
+		void setNombre(string);
+		string getNombre();
+		double getDefensa();
+		double getOfensa();
 		void calcularOfensa();
 		int getGolespro();
 		void setGolespro(int);
 		int getGolescon();
 		void setGolescon();
 		void toString();
+		void imprimirJugadores();
 
 };

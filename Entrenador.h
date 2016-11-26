@@ -5,7 +5,7 @@
 
 using std::string;
 
-class Entrenador : public Persona
+class Entrenador : Persona
 {
 	private:
 		string tactica;
@@ -15,5 +15,5 @@ class Entrenador : public Persona
 		~Entrenador();
 		void setTactica(string);
 		string getTactica();
-		string toString();
+		void toString();
 };

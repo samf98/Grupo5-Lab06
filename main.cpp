@@ -24,6 +24,7 @@ int main()
 		{
 			case 1:
 			{
+				Entrenador* entrenador;
 				string nombre;
 				string apellido;
 				string sobrenombre;
@@ -42,14 +43,15 @@ int main()
 				cin>>extra;
 				if(nivel<11&&nivel>-1)
 				{
-					Entrenador* entrenador = new Entrenador(nombre,apellido,sobrenombre,nivel,extra);
+					entrenador = new Entrenador(nombre,apellido,sobrenombre,nivel,extra);
 				}
 				else{
 					cout<<"Nível inválido, se le asignó 1."<<endl;
-					Entrenador* entrenador = new Entrenador(nombre,apellido,sobrenombre,1,extra);
+					entrenador = new Entrenador(nombre,apellido,sobrenombre,1,extra);
 				}
 				Jugador* jugadores_equipo = new Jugador[11];
 
+				Jugador* jugador;
 				for (int i = 0; i < 11; ++i)
 				{
 					cout<<"Datos de jugador: "<<endl;
@@ -66,14 +68,14 @@ int main()
 
 					if(nivel<11&&nivel>-1)
 					{
-						Jugador* jugador = new Jugador(nombre,apellido,sobrenombre,nivel,extra);
+						jugador = new Jugador(nombre,apellido,sobrenombre,nivel,extra);
 					}
 					else
 					{
 						cout<<"Nível inválido, se le asignó 1."<<endl;
 						Jugador* jugador = new Jugador(nombre,apellido,sobrenombre,1,extra);
 					}
-					jugadores_equipo[i] = jugador;
+					jugadores_equipo[i] = *jugador;
 				}
 
 				cout<<"Ingrese el nombre del equipo: ";
