@@ -12,5 +12,5 @@ class Jugador: Persona
 		~Jugador();
 		void setPosicion(string);
 		string getPosicion();
-		string toString();
+		void toString();
 };

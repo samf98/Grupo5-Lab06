@@ -1,15 +1,14 @@
 #include "Jugador.h"
 #include "Persona.h"
-#include <sstream>
-
-using std::stringstream;
 
 Jugador::Jugador()
 {
 
 }
 
-Jugador::Jugador(string pNombre, string pApellido, string pSobrenombre, int pNivel, string pPosicion):Persona(string pNombre, string pApellido, string pSobrenombre, int pNivel){
+Jugador::Jugador(string pNombre, string pApellido, string pSobrenombre, int pNivel, string pPosicion):Persona(pNombre, pApellido, pSobrenombre, pNivel)
+{
+
 }
 
 void Jugador::setPosicion(string pPosicion){
@@ -24,10 +23,8 @@ Jugador::~Jugador(){
 
 }
 
-string Jugador::toString(){
-	stringstream ss;
-	ss << Persona::toString() << "Posicion del jugador: " << posicion << endl;
-	return ss.str;
+void Jugador::toString(){
+	cout << Persona::toString() << "Posicion del jugador: " << posicion << endl;
 }
 
 

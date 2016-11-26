@@ -3,14 +3,11 @@
 
 using std::stringstream;
 
-Entrenador::Entrenador(string pNombre, string pApellido, string pSobrenombre, int pNivel, string pTactica):Persona(string pNombre, string pApellido, string pSobrenombre, int pNivel){
+Entrenador::Entrenador(string pNombre, string pApellido, string pSobrenombre, int pNivel, string pTactica):Persona(pNombre, pApellido, pSobrenombre, pNivel){
 
 	tactica = pTactica;
-Entrenador::Entrenador() {
-
 }
-
-Entrenador::Entrenador(string pTactica){
+Entrenador::Entrenador() {
 
 }
 
@@ -25,8 +22,6 @@ string Entrenador::getTactica(){
 Entrenador::~Entrenador(){
 }
 
-string Entrenador::toString(){
-	stringstream ss;
-	ss << Persona::toString() << "Tactica preferida: " << preferida << endl;
-	cout << ss;
+void Entrenador::toString(){
+	cout << Persona::toString() << "Tactica preferida: " << tactica << endl;
 }

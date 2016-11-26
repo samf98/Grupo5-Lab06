@@ -20,6 +20,7 @@ class Equipo
 		int golescon;
 
 	public:
+		Equipo();
 		Equipo(string);
 		~Equipo();
 		void setEntrenador(Entrenador*);
@@ -37,6 +38,6 @@ class Equipo
 		int getGolescon();
 		void setGolescon();
 		void toString();
-		string imprimirJugadores();
+		void imprimirJugadores();
 
 };
